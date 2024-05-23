@@ -17,9 +17,9 @@ import (
 			result = append(result, rune(char + 13 - 26))
 		} else if char >= 'A' && char <= 'Z' && char + 13 > 'Z'{
 			result = append(result, rune(char + 13 - 26))
-		} else if char >= 'a' && char <= 'z' && char + 13 < 'z'{
+		} else if char >= 'a' && char <= 'z' && char + 13 <= 'z'{
 			result = append(result, rune(char + 13))
-		}  else if char >= 'A' && char <= 'Z' && char + 13 < 'Z'{
+		}  else if char >= 'A' && char <= 'Z' && char + 13 <= 'Z'{
 			result = append(result, rune(char + 13))
 		} else {
 			result = append(result, rune(input[i]))
