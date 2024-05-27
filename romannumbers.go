@@ -30,7 +30,7 @@ func main() {
 		for numbers[index] <= inputconv {
 			if inputconv-numbers[index] == 0 {
 				if roman[index] == "CM" || roman[index] == "CD" || roman[index] == "XC" || roman[index] == "XL" || roman[index] == "IX" || roman[index] == "IV" {
-					fmt.Print("(", roman[index][1:], " - ", roman[index][0:1], ")",)
+					fmt.Print("(", string(roman[index][1]), " - ", string(roman[index][0]), ")",)
 					final += roman[index]
 					inputconv -= numbers[index]
 					break
@@ -41,7 +41,7 @@ func main() {
 				break
 			} else {
 				if roman[index] == "CM" || roman[index] == "CD" || roman[index] == "XC" || roman[index] == "XL" || roman[index] == "IX" || roman[index] == "IV" {
-					fmt.Print("(", roman[index][1:], " - ", roman[index][0:1], ")", "+")
+					fmt.Print("(", string(roman[index][1]), " - ", string(roman[index][0]), ")", "+")
 					final += roman[index]
 					inputconv -= numbers[index]
 				} else {
