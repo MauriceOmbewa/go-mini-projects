@@ -26,7 +26,6 @@ func main() {
 // 	fmt.Println(chunks)
 // }
 
-
 func Chunk(slice []int, size int) {
 	// If the size is 0, print a newline and return
 	if size == 0 {
