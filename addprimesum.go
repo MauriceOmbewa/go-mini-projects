@@ -11,7 +11,6 @@ func main() {
 		fmt.Println("0")
 		return
 	}
-
 	input := os.Args[1]
 	inpconv, _ := strconv.Atoi(input)
 	sum := 0
